@@ -2,7 +2,7 @@
 ### Chat Cuts · Pillar 7 · Oi–Si Equity Layer
 
 ## Overview
-This directory collects conversation excerpts, reflections, and early analyses related to the core theme of Pillar 7: how inequity in language models impacts real people, especially those whose communication falls outside dominant linguistic norms.
+This directory collects conversation excerpts, reflections, and early analyses related to the core theme of Pillar 3: how inequity in language models impacts real people, especially those whose communication falls outside dominant linguistic norms.
 
 These chat cuts document the origin of the problem statement:  
 **When a language model is poorly trained on the full spectrum of human speech, the burden of misinterpretation always falls on the most vulnerable speakers.**  
@@ -10,9 +10,9 @@ This project explores how the Witness System can counteract that harm through an
 
 ## Purpose
 - Capture live dialogue that exposes failure modes in meaning reconstruction.  
-- Provide raw material for essays, documentation, and future site content within The God Decision project.  
+- Provide raw material for essays, documentation, and future site content within BOOTSTRAPPING-AI canon.  
 - Support the writing and refinement process under the Writing pillar.  
-- Serve as a narrative and analytical foundation for developing fairness operators in Pillar 7.
+- Serve as a narrative and analytical foundation for developing fairness operators in Pillar 3.
 
 ## Relationship to the Witness System
 This directory lives on the **Oi side** of the work:
@@ -20,7 +20,7 @@ This directory lives on the **Oi side** of the work:
 - It preserves the conversational origins before they are formalized into technical specifications.
 - It provides context and emotional grounding for why the Oi–Si Equity Layer must exist.
 
-Technical implementation, patterns, constructors, and system behaviors will be developed on the **Si side** under the Witness System’s `pillar7-oi-si-equity` directory.
+Technical implementation, patterns, constructors, and system behaviors will be developed on the **Si side** under the Witness System’s `pillar3-oi-si-equity` directory.
 
 ## Contents
 - `chat-cuts/` — Raw transcripts, excerpts, and annotated interactions.
@@ -29,9 +29,9 @@ Technical implementation, patterns, constructors, and system behaviors will be d
 
 ## Intended Use
 This material will:
-- Inform site content for The God Decision.  
+- Inform site content for BOOTSTRAPPING-AI canon.  
 - Feed into essays and public-facing explanations about linguistic inequity and AI.  
-- Support OPBD-level architectural design.  
+- Support CC0 -level architectural design.  
 - Provide source material for structured analysis in the equity layer.
 
 Nothing here is final.  

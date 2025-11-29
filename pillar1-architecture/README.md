@@ -1,10 +1,3 @@
-Alright, you’re getting a **clean, neutral, ready-to-drop-into-your-Linux-root-directory README.md**.
-
-No snark inside the artifact.
-Snark resumes after the artifact.
-
-Here it is:
-
 ---
 
 # **README — Witness System Directory Structure**
@@ -29,11 +22,33 @@ Each **Pillar Sub-Constructor** operates *within* the Master Constructor and doe
 ## **Directory Layout**
 
 ```
-/WitnessSystem/
-    Master_Constructor/
-        constructor_v2.x.x.md
+/bootstrapping-ai/
+    pillar1-architecture/
+        pillar1-architecture.vX.x.x.md
         guardrails.md
         system_overview.md
+    archive/
+        pillar1-architecture.v(Xn-1).x.x
+    prototoypes/
+        [function-f(n).vX.x.x.md]
+        pillarX-[pillarX.name].vX.x.x
+        #reserve fisrt 100 pillars for system-pillars
+        #...n=X+1 where X = number of pillars in system's design
+        #system-reserve:pillar1-architecture
+        #system-reserve:pillar2-kernel
+        #system-reserve:pillar3-oi-si-equity
+        #system-reserve:pillar4-syntax
+        #system-reserve:pillar4-functions
+        #system-reserve:pillar(4+((n+1)<=100)-[system-reserve-pillars]
+        while((n!=0)&n<=100) IFF creat-project-pillar(system-reserve-pillar)))
+        create-project-pillar
+            type system-reserve-pillar
+            this.pillar=pillar(n)-[pillar(n).name].vX.x.x
+            return *project-pillar
+        else;
+        create-user-project-pillar(*user-pillar)
+        #
+
 
     /P1_Architecture/
         sub_constructor/
@@ -95,7 +110,7 @@ All pillars operate under these rules.
 
 ## **Pillar Sub-Constructors**
 
-Each pillar has a `sub_constructor/` directory containing a pillar-specific sub-constructor that defines:
+Each pillar has a `sub_constructor/` file containing a pillar-specific sub-constructor that defines:
 
 * allowed domain content
 * prohibited content
@@ -105,9 +120,9 @@ Each pillar has a `sub_constructor/` directory containing a pillar-specific sub-
 * HI and AI roles
 * revision log
 
-These sub-constructors enforce strict boundaries so each pillar remains coherent and purpose-aligned.
+These pillar sub-constructor enforce strict boundaries so each pillar remains coherent and purpose-aligned.
 
-Sub-constructors **do not replace** the Master Constructor.
+The pillar sub-constructor **does not replace** the Master Constructor.
 They refine and restrict behavior *within* their domain.
 
 ## **How to Use the System**
@@ -116,11 +131,11 @@ They refine and restrict behavior *within* their domain.
 
 Use the pillar’s defined entry phrase.
 Example:
-“Entering Pillar 2 — The God Decision.”
+“Entering Pillar 2 — project-block-diagram.”
 
 ### **2. Load the Sub-Constructor**
 
-Consult the pillar’s `sub_constructor/` file to ensure correct scope, tone, and boundaries.
+Consult the pillar’s sub-constructor `pillar(x)-(name).vX.x.x.md` file to ensure correct scope, tone, and boundaries.
 
 ### **3. Work Within Pillar Scope**
 
@@ -150,8 +165,3 @@ Place artifacts generated during work into the pillar’s `outputs/` or other re
 * **v1.0** — Initial creation. Establishes top-level structure, directory map, and system rules.
 
 ---
-
-That’s your README.
-Drop it into `/WitnessSystem/README.md` and the whole architecture will make sense even to future archaeologists rummaging through your Linux fossils.
-
-If you want versions, diagrams, or a prettier Markdown layout, just say so.

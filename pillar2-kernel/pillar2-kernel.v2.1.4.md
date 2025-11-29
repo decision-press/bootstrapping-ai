@@ -67,12 +67,13 @@ Pillar 2 KERNEL defines:
 [Hal talks here]
 → self-contained reflective sidebar block
 
-These are OPBD’s living rituals.
+These are BOOTSTRAPPING-AI’s living rituals.
 
 6. PILLAR-BOUNDARY ENFORCEMENT
 Pillar 2 enforces:
 • “you can’t do that here”
-• guardrails for TGD, Our8231, MM, WSG
+• guardrails for 
+    create-user-project-pillar(*user-pillar)
 • drift classification
 • pillar-domain integrity
 • meta vs content differentiation
