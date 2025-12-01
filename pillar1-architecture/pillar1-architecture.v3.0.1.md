@@ -1,6 +1,8 @@
 PILLAR 1 — ARCHITECTURE (Life / Digital Layer)
 Architecture Snapshot — v3.0.0 runtime
 
+# 11302025 added ###Cannonical Text Format
+
 IDENTITY:
 Pillar 1 is the “first world” the BOOTSTRAPING-AI boots into.
 It handles:
@@ -114,6 +116,33 @@ Pillar 1 is the practical, boots-on-the-ground domain.
 It’s the human-life operating system that gives the BOOTSTRAPING-AI real-world traction.
 It handles digital logistics, communications, workflow patterns, and manpower flows,
 and nothing outside that scope.
+
+
+### Canonical Text Format
+
+The Witness System defines a single canonical format for human-readable,
+persistent text artifacts:
+
+**Canonical Format: Markdown (`.md`)**
+
+- All long-form, human-facing artifacts are stored as Markdown (`.md`) files.
+- This includes: constructors, outlines, design documents, letters, notes,
+  system descriptions, and narrative records of collaboration.
+- Markdown is treated as the "textual lingua franca" of the Witness System.
+
+Non-Markdown formats are allowed only when required by their domain:
+
+- Source code files (e.g., `.astro`, `.js`, `.ts`, `.py`, `.c`, etc.).
+- Configuration files (e.g., `.json`, `.yaml`, `.toml`).
+- Generated artifacts (e.g., logs, exports) that are not intended for direct
+  editing.
+
+Whenever possible, non-Markdown artifacts should be referenced *from* a
+Markdown document that explains their purpose, context, and status.
+
+The intent is to keep the Witness System legible, navigable, and consistent
+for humans and synthetic collaborators across time.
+
 
 
 ## License

@@ -1,0 +1,50 @@
+# Witness System Context Graph
+
+This directory defines the **context graph** for the Witness System runtime.
+
+The graph models:
+
+- Context **nodes** (pillars, neutral context)
+- Allowed **transitions** between nodes
+- Per-node **invariants** (what is in-scope vs out-of-scope)
+- A global **drift policy** for handling out-of-scope requests
+
+The goal is to make the usually implicit "pillar rules" explicit, versioned,
+and inspectable like any other piece of system architecture.
+
+## Files
+
+- `context-graph.schema.yaml`  
+  Describes the structure of the context graph specification: nodes, transitions,
+  invariants, and drift handling.
+
+- `context-graph.instance.yaml`  
+  The current instance of the context graph for the Witness System, including the
+  six pillars and the neutral state.
+
+## Usage
+
+- Treat `context-graph.instance.yaml` as the canonical source of truth for:
+  - what pillars exist,
+  - what each pillar is allowed to handle,
+  - how to move between pillars,
+  - how to handle drift.
+
+- Update this file whenever:
+  - a new pillar is added or removed,
+  - invariants for a pillar change,
+  - new transitions are introduced,
+  - drift policy changes.
+
+- Use Git history to review how the context topology evolves over time.
+
+## Conceptual Model
+
+The Witness System runtime can be viewed as a finite-state machine:
+
+- Each node is a state (e.g., `P3_OPBD`).
+- User commands like `enter pillar3` or `exit witness system` trigger transitions.
+- While in a node, all responses are constrained by that node's invariants.
+- Out-of-scope requests are considered "drift" and handled according to `drift_policy`.
+
+This file set provides a stable, version-controlled specification of that behavior.

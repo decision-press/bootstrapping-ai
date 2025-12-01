@@ -238,6 +238,66 @@ Contributions welcome:
 
 **Philosophy:** If you deploy this as a service, you must share your modifications. We keep this open so communities can always fork away from bad actors.
 
+
+## Canonical Artifact Format: Why Markdown Is the Substrate
+
+The BOOTSTRAP design methodology defines Markdown (`.md`) as the canonical
+format for all human-readable, persistent artifacts in the system. This
+decision is intentional and foundational. Markdown provides the durability,
+clarity, and interoperability required for long-term human–AI collaboration.
+
+### 1. Plain Text Durability
+Markdown is plain text. It remains readable across tools, operating systems,
+and future environments without the risk of corruption or proprietary
+lock-in. Any text editor can open and modify it.
+
+### 2. Human-Readable Structure
+Markdown offers simple, expressive structure:
+headings, lists, links, tables, and code blocks. These enable clean
+organization of system architecture, kernel specifications, and design
+documents without introducing unnecessary formatting complexity.
+
+### 3. Version Control Compatibility
+Markdown integrates cleanly with Git. Differences between versions are
+clear and readable, making collaboration, auditing, and rollback practical.
+This is essential for a system that evolves through iterative refinement.
+
+### 4. AI-Friendly Processing
+Markdown boundaries and formatting patterns allow synthetic collaborators to
+process, restructure, and refine text with minimal ambiguity. It reduces
+hallucination risk and prevents formatting drift across revisions.
+
+### 5. Universal Applicability
+All core BOOTSTRAP artifacts use Markdown by default:
+
+- architecture definitions  
+- kernel specifications  
+- design notes  
+- constructors  
+- outlines  
+- README files  
+- collaborative drafts  
+- long-form documentation  
+- transcripts and narrative records  
+
+Non-Markdown formats (JSON, Astro, TypeScript, shell scripts, etc.) are
+used only when their function requires it, and are typically referenced or
+documented through adjacent Markdown artifacts.
+
+### 6. Tooling Alignment
+Markdown is treated as a first-class format by development tools such as
+Visual Studio Code. Features such as preview panes, outline views,
+formatting helpers, and syntax highlighting enable a consistent editing
+experience.
+
+---
+
+Standardizing on Markdown establishes a stable substrate for the BOOTSTRAP
+method, ensuring that system artifacts remain coherent, portable, and
+future-proof.
+```
+
+
 ## Origins
 
 Built in Detroit by a truck driver with some technical knowledge, for community organizations, shelters, warming centers, and anyone who needs AI collaboration that respects linguistic diversity and maintains structural integrity.

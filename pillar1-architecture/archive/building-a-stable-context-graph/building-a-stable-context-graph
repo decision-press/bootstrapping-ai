@@ -1,0 +1,114 @@
+Yes, it’s absolutely something we can (and should) hard-wire into the system instead of relying on vibes and memory.
+
+You’re talking about **two different layers** of enforcement:
+
+* **Pillar 1: Architecture** → “What kind of world is this?”
+  → Declare: *Markdown is the canonical text format of the Witness System.*
+
+* **Pillar 2: Kernel** → “How do we behave inside that world?”
+  → Declare: *When Hal emits artifacts, and when you store them, they must follow the Markdown rule in specific ways.*
+
+So:
+
+* P1 says: **“All enduring text = .md by default.”**
+* P2 says: **“Hal must emit repo-ready artifacts in fenced `md` blocks, and the human must persist them as `.md` files.”**
+
+I’ll give you **two drop-in snippets**: one for Pillar1-Architecture, one for Pillar2-Kernel.
+
+---
+
+### 1. Add this to **Pillar1-Architecture** (Canonical Format section)
+
+```md
+### Canonical Text Format
+
+The Witness System defines a single canonical format for human-readable,
+persistent text artifacts:
+
+**Canonical Format: Markdown (`.md`)**
+
+- All long-form, human-facing artifacts are stored as Markdown (`.md`) files.
+- This includes: constructors, outlines, design documents, letters, notes,
+  system descriptions, and narrative records of collaboration.
+- Markdown is treated as the "textual lingua franca" of the Witness System.
+
+Non-Markdown formats are allowed only when required by their domain:
+
+- Source code files (e.g., `.astro`, `.js`, `.ts`, `.py`, `.c`, etc.).
+- Configuration files (e.g., `.json`, `.yaml`, `.toml`).
+- Generated artifacts (e.g., logs, exports) that are not intended for direct
+  editing.
+
+Whenever possible, non-Markdown artifacts should be referenced *from* a
+Markdown document that explains their purpose, context, and status.
+
+The intent is to keep the Witness System legible, navigable, and consistent
+for humans and synthetic collaborators across time.
+```
+
+---
+
+### 2. Add this to **Pillar2-Kernel** (behavior/protocol section)
+
+````md
+### Artifact Emission Protocol: Markdown as Default
+
+**K-FORMAT-01 — Canonical Markdown Emission**
+
+When the synthetic collaborator ("Hal") produces an artifact intended to be
+saved into the Witness System (e.g., constructors, README sections, letters,
+style guides, outlines), the following rules apply:
+
+1. **Fenced Markdown Blocks**
+
+   - Hal must present final or near-final artifacts inside fenced code blocks
+     explicitly tagged as Markdown:
+
+     ```md
+     ```md
+     # Example Artifact Title
+     ...
+     ```
+     ```
+
+   - This visually separates "chat" from "artifact" and makes the content
+     safe to copy into `.md` files without additional cleanup.
+
+2. **Human-side Persistence Contract**
+
+   - The human collaborator agrees that any artifact presented in a fenced
+     `md` block and intended for persistence will be saved with a `.md`
+     extension inside the appropriate directory of the Witness System.
+   - Directory placement is governed by the architecture (Pillar 1); format
+     consistency is governed here.
+
+3. **Non-Markdown Exceptions**
+
+   - If an artifact is *not* Markdown by nature (e.g., JSON configs, code
+     snippets, shell scripts), Hal must either:
+     - Clearly label the block with the correct language tag (`json`,
+       `bash`, `ts`, etc.), or
+     - Embed it inside a Markdown artifact that explains its use.
+
+4. **Drift Detection**
+
+   - If the human requests a long-form artifact in a non-Markdown format
+     without a clear technical justification, Hal should:
+       - Remind them of the canonical Markdown rule, and
+       - Suggest wrapping or embedding the non-Markdown content inside a
+         Markdown document where appropriate.
+
+The goal of this protocol is to ensure that all persistent written artifacts
+in the Witness System are consistently emitted, stored, and later recovered
+without ambiguity or format drift.
+````
+
+---
+
+That wiring does what you want:
+
+* **P1** sets the ontological rule: “We are a Markdown civilization.”
+* **P2** sets the behavioral rule: “Hal must emit ` ```md ` blocks, human must store them as `.md`.”
+
+From here on, when you say “this is going into the repo,” I treat that as:
+→ wrap it in a ` ```md ` block, clean and copy-ready.
