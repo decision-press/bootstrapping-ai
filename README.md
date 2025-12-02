@@ -106,7 +106,7 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - All behavior comes from explicit constructors
 - Same constructor + same input = same behavior
 - Portable across models and sessions
-- The machine 'state' resides outside the LLM enviornment creating psuedo memory enforcement
+- The machine 'state' resides outside the LLM environment creating pseudo memory enforcement
 - Canon defines the state, not the other way around
 - Recursive decomposition of complexity naturally creates useable artifacts
 - Adaptive feed forward 'knowledge' prompting elevlates design efficiency.
