@@ -89,7 +89,7 @@ Each pillar has:
 
 **Live Ritual Theory** - Syntax/ritual is only "alive" if it causes actual behavioral change
 
-**Function Style Calls** - Design useable functions and call them from any pillar
+**Function Style Calls** - Design usable functions and call them from any pillar
 
 **Type Enforced** - Maintain coherency throughout project evolution through guardrails and anti-sloppiness protocol
 
@@ -106,11 +106,11 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - All behavior comes from explicit constructors
 - Same constructor + same input = same behavior
 - Portable across models and sessions
-- The machine 'state' resides outside the LLM environment creating pseudo memory enforcement
+- The machine state resides outside the LLM environment creating pseudo memory enforcement
 - Canon defines the state, not the other way around
-- Recursive decomposition of complexity naturally creates useable artifacts
-- Adaptive feed forward 'knowledge' prompting elevlates design efficiency.
-- Useable artifacts prompt feed new threads creating recursively better artifacts.
+- Recursive decomposition of complexity naturally creates usable artifacts
+- Adaptive feed forward 'knowledge' prompting elevates design efficiency.
+- Usable artifacts can prompt new threads, creating recursively better artifacts.
 
 ### 4. Community-First Design
 
