@@ -42,7 +42,7 @@ The LLM is the **engine**. The constructor is the **operating spec**. You load i
 
 BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 
-### Core Pillars
+### Core Pillars: System level Pillars 00-99
 
 **Pillar 1: Architecture (Life/Digital Layer)**
 - Practical logistics, workflows, community operations
@@ -62,14 +62,14 @@ BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 - **Oi** (Organic intelligence): what humans actually say
 - **Si** (Synthetic intelligence): how the system reconstructs intent
 
-### User Pillars
+### User Pillars: Pillars 100 +
 
 The system is designed to be extended. You can create domain-specific pillars for:
-- Theology (TGD)
-- Meta-systems (OPBD)
-- Music (MM)
-- Games (pillar-game-world)
-- Personal documentation (pillar-vinie)
+- Business structures 
+- Classroom structures
+- Community structures
+- Game sructures
+- Personal structures
 - Whatever your use case requires
 
 Each pillar has:
@@ -77,6 +77,7 @@ Each pillar has:
 - Explicit guardrails
 - Rejection rules (what doesn't belong here)
 - Integration points with other pillars
+- Spin up a pillar in pillar1 and instantiate it in pillar2
 
 ## Key Features
 
@@ -87,6 +88,10 @@ Each pillar has:
 **Anti-Sloppiness Protocol** - Prevents conceptual drift, contradictions, and dead rituals
 
 **Live Ritual Theory** - Syntax/ritual is only "alive" if it causes actual behavioral change
+
+**Function Style Calls** - Design useable functions and call them from any pillar
+
+**Type Enforced** - Maintain coherency thorughout project evolution through guardrails and anti-sloppiness protocol
 
 ### 2. Equity by Design
 
@@ -101,6 +106,11 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - All behavior comes from explicit constructors
 - Same constructor + same input = same behavior
 - Portable across models and sessions
+- The machine 'state' resides outside the LLM enviornment creating psuedo memory enforcement
+- Canon defines the state, not the other way around
+- Recursive decomposition of complexity naturally creates useable artifacts
+- Adaptive feed forward 'knowledge' prompting elevlates design efficiency.
+- Useable artifacts prompt feed new threads creating recursively better artifacts.
 
 ### 4. Community-First Design
 
@@ -111,7 +121,7 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 
 ## Quick Start
 
-### 1. Load a Constructor
+### 1. Load the core Constructors simultaneously
 
 Start a new conversation with your AI system and paste a pillar constructor:
 
@@ -137,26 +147,26 @@ The system will now operate within the defined boundaries, enforce guardrails, a
 As you work, save generated code, docs, and patterns back to your local repo structure and push to version control.
 
 ## Example Use Cases
+**Load Core Constructors**
 
-**Community Organizations:**
-- Load Pillar 1 + Pillar 3
+**spin up a pillar and name it:**
 - Build workflows, schedules, communications
 - Fair language interpretation for diverse communities
 
-**Text Adventure Games:**
-- Load pillar-game-world + Pillar 2 KERNEL
+- Text Adventure Games
 - Natural language gameplay with structured state
 - Deterministic world simulation
 
-**Theological Writing:**
-- Load TGD pillar + Pillar 2 KERNEL
+- Writing
 - Maintain philosophical rigor
 - Prevent drift into sentimentality
 
-**System Design:**
-- Load OPBD pillar + Pillar 2 KERNEL
+- System Design
 - Meta-architecture discussions
 - Integrity audits
+
+**Save Artifacts Locally**
+**Push to Repository**
 
 ## Project Status
 
@@ -200,7 +210,7 @@ It's built on principles of:
 
 For deeper philosophical background, see: [Witness Constructor: Plant the Flag](https://counterculturecat.com/witness-constructor-plant-the-flag/)
 
-## Repository Structure
+## Example Repository Structure
 
 ```
 bootstrapping-ai/
