@@ -21,6 +21,7 @@ Think of it as an operating system specification for AI collaboration, not a per
 - **Guardrails** prevent drift and enforce integrity
 
 The LLM is the **engine**. The constructor is the **operating spec**. You load it at session start, and the system runs with consistent behavior.
+Make the AI become the runtime instead of talking about the runtime.
 
 ## Why This Matters
 
@@ -42,7 +43,7 @@ The LLM is the **engine**. The constructor is the **operating spec**. You load i
 
 BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 
-### Core Pillars
+### Core Pillars: System-level Pillars 00-99
 
 **Pillar 1: Architecture (Life/Digital Layer)**
 - Practical logistics, workflows, community operations
@@ -62,14 +63,14 @@ BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 - **Oi** (Organic intelligence): what humans actually say
 - **Si** (Synthetic intelligence): how the system reconstructs intent
 
-### User Pillars
+### User Pillars: Pillars 100+
 
 The system is designed to be extended. You can create domain-specific pillars for:
-- Theology (TGD)
-- Meta-systems (OPBD)
-- Music (MM)
-- Games (pillar-game-world)
-- Personal documentation (pillar-vinie)
+- Business operations and workflows
+- Classroom management and pedagogy
+- Community organization and coordination
+- Game worlds and interactive narratives
+- Personal documentation and knowledge management
 - Whatever your use case requires
 
 Each pillar has:
@@ -77,6 +78,7 @@ Each pillar has:
 - Explicit guardrails
 - Rejection rules (what doesn't belong here)
 - Integration points with other pillars
+- Define pillars in Pillar 1, register them in Pillar 2
 
 ## Key Features
 
@@ -87,6 +89,10 @@ Each pillar has:
 **Anti-Sloppiness Protocol** - Prevents conceptual drift, contradictions, and dead rituals
 
 **Live Ritual Theory** - Syntax/ritual is only "alive" if it causes actual behavioral change
+
+**Function Style Calls** - Design usable functions and call them from any pillar
+
+**Type Enforced** - Maintain coherency throughout project evolution through guardrails and anti-sloppiness protocol
 
 ### 2. Equity by Design
 
@@ -101,6 +107,11 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - All behavior comes from explicit constructors
 - Same constructor + same input = same behavior
 - Portable across models and sessions
+- The machine state resides outside the LLM environment creating pseudo memory enforcement
+- Canon defines the state, not the other way around
+- Recursive decomposition of complexity naturally creates usable artifacts
+- Adaptive feed forward 'knowledge' prompting elevates design efficiency.
+- Usable artifacts can prompt new threads, creating recursively better artifacts.
 
 ### 4. Community-First Design
 
@@ -111,12 +122,12 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 
 ## Quick Start
 
-### 1. Load a Constructor
+### 1. Load the core Constructors simultaneously
 
 Start a new conversation with your AI system and paste a pillar constructor:
 
 ```
-[Load contents of pillar2-kernel/constructor.md]
+[Tell the ai to 'emulate the bootstrapping-ai' not 'comment on it' ]
 ```
 
 ### 2. Set Context
@@ -124,8 +135,8 @@ Start a new conversation with your AI system and paste a pillar constructor:
 Tell the system what you're working on:
 
 ```
-I'm working on [describe your domain]. 
-Which pillar should handle this?
+Enter pillar(x). 
+Do the work, the system checks the guardrails.
 ```
 
 ### 3. Collaborate
@@ -137,26 +148,26 @@ The system will now operate within the defined boundaries, enforce guardrails, a
 As you work, save generated code, docs, and patterns back to your local repo structure and push to version control.
 
 ## Example Use Cases
+**Load Core Constructors**
 
-**Community Organizations:**
-- Load Pillar 1 + Pillar 3
+**spin up a pillar and name it:**
 - Build workflows, schedules, communications
 - Fair language interpretation for diverse communities
 
-**Text Adventure Games:**
-- Load pillar-game-world + Pillar 2 KERNEL
+- Text Adventure Games
 - Natural language gameplay with structured state
 - Deterministic world simulation
 
-**Theological Writing:**
-- Load TGD pillar + Pillar 2 KERNEL
+- Writing
 - Maintain philosophical rigor
 - Prevent drift into sentimentality
 
-**System Design:**
-- Load OPBD pillar + Pillar 2 KERNEL
+- System Design
 - Meta-architecture discussions
 - Integrity audits
+
+**Save Artifacts Locally**
+**Push to Repository**
 
 ## Project Status
 
@@ -200,7 +211,7 @@ It's built on principles of:
 
 For deeper philosophical background, see: [Witness Constructor: Plant the Flag](https://counterculturecat.com/witness-constructor-plant-the-flag/)
 
-## Repository Structure
+## Example Repository Structure
 
 ```
 bootstrapping-ai/
