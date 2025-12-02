@@ -62,14 +62,14 @@ BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 - **Oi** (Organic intelligence): what humans actually say
 - **Si** (Synthetic intelligence): how the system reconstructs intent
 
-### User Pillars: Pillars 100 +
+### User Pillars: Pillars 100+
 
 The system is designed to be extended. You can create domain-specific pillars for:
-- Business structures 
-- Classroom structures
-- Community structures
-- Game sructures
-- Personal structures
+- Business operations and workflows
+- Classroom management and pedagogy
+- Community organization and coordination
+- Game worlds and interactive narratives
+- Personal documentation and knowledge management
 - Whatever your use case requires
 
 Each pillar has:
@@ -91,7 +91,7 @@ Each pillar has:
 
 **Function Style Calls** - Design useable functions and call them from any pillar
 
-**Type Enforced** - Maintain coherency thorughout project evolution through guardrails and anti-sloppiness protocol
+**Type Enforced** - Maintain coherency throughout project evolution through guardrails and anti-sloppiness protocol
 
 ### 2. Equity by Design
 
