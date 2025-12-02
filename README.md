@@ -42,7 +42,7 @@ The LLM is the **engine**. The constructor is the **operating spec**. You load i
 
 BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 
-### Core Pillars: System level Pillars 00-99
+### Core Pillars: System-level Pillars 00-99
 
 **Pillar 1: Architecture (Life/Digital Layer)**
 - Practical logistics, workflows, community operations
@@ -77,7 +77,7 @@ Each pillar has:
 - Explicit guardrails
 - Rejection rules (what doesn't belong here)
 - Integration points with other pillars
-- Spin up a pillar in pillar1 and instantiate it in pillar2
+- Define pillars in Pillar 1, register them in Pillar 2
 
 ## Key Features
 
