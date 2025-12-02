@@ -126,7 +126,7 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 Start a new conversation with your AI system and paste a pillar constructor:
 
 ```
-[Load contents of pillar2-kernel/constructor.md]
+[Tell the ai to 'emulate the bootstrapping-ai' not 'comment on it' ]
 ```
 
 ### 2. Set Context
@@ -134,8 +134,8 @@ Start a new conversation with your AI system and paste a pillar constructor:
 Tell the system what you're working on:
 
 ```
-I'm working on [describe your domain]. 
-Which pillar should handle this?
+Enter pillar(x). 
+Do the work, the system checks the guardrails.
 ```
 
 ### 3. Collaborate
