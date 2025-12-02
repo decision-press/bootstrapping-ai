@@ -21,6 +21,7 @@ Think of it as an operating system specification for AI collaboration, not a per
 - **Guardrails** prevent drift and enforce integrity
 
 The LLM is the **engine**. The constructor is the **operating spec**. You load it at session start, and the system runs with consistent behavior.
+Make the AI become the runtime instead of talking about the runtime.
 
 ## Why This Matters
 
