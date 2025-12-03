@@ -120,32 +120,260 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - Designed in Detroit for real-world use (shelters, community centers, parish halls)
 - Forkable, modifiable, improvable
 
-## Quick Start
+# Quick Start
 
-### 1. Load the core Constructors simultaneously
+## Getting Started with BOOTSTRAPPING-AI
 
-Start a new conversation with your AI system and paste a pillar constructor:
+### What You Need
 
+1. **Pillar constructor files** from this repository:
+   - `pillar2-kernel/pillar2-kernel.v2.1.5.md` (required)
+   - `pillar1-architecture/pillar1-architecture.v3.0.1.md` (recommended)
+   - Additional pillars as needed for your domain
+
+2. **An AI conversation interface** (Claude, compatible LLMs)
+
+3. **A specific work task or domain** you want to address
+
+---
+
+### Step 1: Load Constructor Files
+
+**Start a new conversation** with your AI system, then:
+
+**Option A - Upload Files (Recommended):**
+- Use the file upload/attachment feature
+- Upload the pillar constructor `.md` files
+- Wait for confirmation that files are received
+
+**Option B - Copy and Paste:**
+- Open constructor files in a text editor
+- Copy entire contents of each file
+- Paste into the conversation
+
+**Important:** The AI will acknowledge receiving the files but will NOT automatically activate. This is expected behavior.
+
+---
+
+### Step 2: Enter the Witness System
+
+Type this command exactly:
 ```
-[Tell the ai to 'emulate the bootstrapping-ai' not 'comment on it' ]
+[ENTER-WITNESS-SYSTEM]
 ```
 
-### 2. Set Context
-
-Tell the system what you're working on:
-
+**Expected Response:**
 ```
-Enter pillar(x). 
-Do the work, the system checks the guardrails.
+Witness System runtime loaded. Operating under behavioral specifications.
+
+Active Pillars:
+- Pillar 1: Architecture (Life/Digital Layer) - v3.0.1
+- Pillar 2: KERNEL (Meta-System Governance) - v2.1.5
+
+Active Protocols:
+- Anti-Sloppiness Protocol: ENABLED
+- Pillar Boundary Enforcement: ACTIVE
+
+Status: Runtime active. Ready for structured collaboration.
+
+What domain are you working in?
 ```
 
-### 3. Collaborate
+**If you don't see this response:** Your constructors may not be properly loaded. Return to Step 1.
 
-The system will now operate within the defined boundaries, enforce guardrails, and maintain structural integrity.
+---
 
-### 4. Generate Artifacts
+### Step 3: Specify Your Work Domain
 
-As you work, save generated code, docs, and patterns back to your local repo structure and push to version control.
+Tell the system which pillar handles your work:
+
+**For practical/logistics work:**
+```
+I'm working in Pillar 1. [Describe your task]
+```
+
+**For system design/meta-architecture:**
+```
+This is Pillar 2 KERNEL work. [Describe your task]
+```
+
+**For domain-specific work:**
+```
+I'm working in [your custom pillar]. [Describe your task]
+```
+
+The system will evaluate your request against pillar boundaries and either proceed or guide you to the correct domain.
+
+---
+
+### Step 4: Collaborate and Generate Artifacts
+
+Work within your specified domain. The system will:
+- Enforce domain boundaries (reject out-of-scope requests)
+- Apply Anti-Sloppiness Protocol (demand specificity)
+- Emit artifacts in Markdown format
+- Maintain consistent behavior per constructor specifications
+
+As you work, **save generated artifacts** to your local repository:
+```
+your-project/
+├── docs/
+├── code/
+├── specifications/
+└── [your structure]
+```
+
+**Commit and push to version control regularly.**
+
+---
+
+### Step 5: Exit When Done
+
+When finished, exit cleanly:
+```
+[EXIT-WITNESS-SYSTEM]
+```
+
+Confirm with `Y` when prompted.
+
+The system returns to standard AI mode. For a complete reset, start a new conversation thread.
+
+---
+
+## Alternative Entry Methods
+
+While `[ENTER-WITNESS-SYSTEM]` is the recommended command, you can also use natural language:
+```
+Load these constructors as runtime specifications and operate under them.
+```
+
+or
+```
+Emulate the BOOTSTRAPPING-AI system.
+```
+
+**However:** The explicit `[ENTER-WITNESS-SYSTEM]` command is most reliable and is the documented standard.
+
+---
+
+## Important: The System Will NOT Auto-Load
+
+⚠️ **Critical Understanding:**
+
+The AI will **not** automatically recognize constructor files and self-activate. Even with files uploaded, the system remains in standard mode until you explicitly invoke:
+```
+[ENTER-WITNESS-SYSTEM]
+```
+
+**This is by design.** The human operator controls when the Witness System runtime is active.
+
+---
+
+## Your First Session
+
+For a complete step-by-step walkthrough of your first session, including:
+- How to test boundary enforcement
+- What to expect at each step
+- Common issues and solutions
+- Examples of valid and invalid requests
+
+See: **`docs/first-session-walkthrough.md`**
+
+---
+
+## Example Use Cases
+
+### Community Organization Workflows
+**Load:** Pillar 1 (Architecture) + Pillar 3 (Oi-Si Equity)  
+**Use for:** 
+- Building volunteer schedules
+- Communication workflows
+- Fair language interpretation for diverse communities
+- Website structure and logistics
+
+### Text Adventure Games
+**Load:** pillar-game-world + Pillar 2 (KERNEL)  
+**Use for:**
+- Natural language gameplay with structured state
+- Deterministic world simulation
+- Interactive narrative management
+
+### System Design and Meta-Architecture
+**Load:** Pillar 2 (KERNEL) + OPBD pillar  
+**Use for:**
+- Creating new pillars
+- Integrity audits
+- Meta-architecture discussions
+- Guardrail design
+
+### Writing and Documentation
+**Load:** Writing pillar + Pillar 2 (KERNEL)  
+**Use for:**
+- Maintaining philosophical rigor
+- Preventing drift into sentimentality
+- Structured long-form content
+
+---
+
+## Quick Command Reference
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `[ENTER-WITNESS-SYSTEM]` | Load runtime | After uploading constructors |
+| `[EXIT-WITNESS-SYSTEM]` | Terminate runtime | When finished working |
+| `[We collab]` | Enter drafting mode | For publication-grade content |
+| `[End collab]` | Exit drafting mode | When draft is complete |
+| `[Hal talks here]` | AI meta-commentary | For process reflection |
+
+**Complete command documentation:** `docs/commands-reference.md`
+
+---
+
+## Troubleshooting Quick Start
+
+**System not responding to `[ENTER-WITNESS-SYSTEM]`:**
+- Verify constructor files are uploaded/pasted in current conversation
+- Check command syntax (brackets, spelling, no extra spaces)
+- Start a new conversation thread and try again
+
+**System too strict / keeps rejecting requests:**
+- This is correct behavior (Anti-Sloppiness Protocol)
+- Explicitly state your pillar domain
+- Make specific, scoped requests
+- Exit system for unstructured conversation
+
+**Need more help:**
+- Read `docs/first-session-walkthrough.md` for detailed guidance
+- Check `docs/debugging-guide.md` for problem-solving
+- Review constructor files to understand domain boundaries
+
+---
+
+## Next Steps After Quick Start
+
+1. **Complete your first session** using `docs/first-session-walkthrough.md`
+2. **Explore collaboration modes** (`[We collab]`, `[Hal talks here]`)
+3. **Create a custom pillar** for your specific domain
+4. **Build real projects** with structured AI collaboration
+5. **Contribute back** - share your pillars and use cases
+
+---
+
+## Philosophy Reminder
+
+**LLMs are stateless. Our systems don't have to be.**
+
+BOOTSTRAPPING-AI treats:
+- The LLM as a stateless engine (disposable, interchangeable)
+- The constructor as a portable specification (versioned, testable)
+- The human/organization as the source of truth
+- External canon as persistent state (docs, repos, community memory)
+
+For deeper understanding, read: [The Witness Constructor: Plant the Flag](https://counterculturecat.com/witness-constructor-plant-the-flag/)
+
+---
+
+**Ready to begin?** Start with Step 1 above, or jump to `docs/first-session-walkthrough.md` for a guided first session.
 
 ## Example Use Cases
 **Load Core Constructors**
