@@ -1,0 +1,357 @@
+# First Session Walkthrough
+**BOOTSTRAPPING-AI Quick Start Guide**  
+**Version:** 0.2.0-alpha  
+**Last Updated:** December 3, 2025  
+**Audience:** First-time users with no prior system knowledge
+
+## What You'll Accomplish
+
+By the end of this walkthrough, you will:
+1. Load the BOOTSTRAPPING-AI system into an AI conversation
+2. Enter the Witness System runtime
+3. Make a simple work request
+4. See pillar boundary enforcement in action
+5. Exit the system cleanly
+
+**Time required:** 10-15 minutes
+
+---
+
+## Before You Start
+
+### What You Need
+
+1. **The pillar constructor files** - At minimum:
+   - `pillar1-architecture.md` (or latest version)
+   - `pillar2-kernel.md` (or latest version)
+
+2. **An AI conversation interface** - This works with:
+   - Claude.ai web interface
+   - Claude API
+   - Other LLM interfaces (cross-model compatibility varies)
+
+3. **A specific work task in mind** - Examples:
+   - "Help me organize a volunteer schedule"
+   - "Design a workflow for community communications"
+   - "Explain how to create a new pillar"
+
+### What This System Is
+
+BOOTSTRAPPING-AI is **not** a chatbot personality. It's a **behavioral specification system** that makes AI collaboration:
+- Structured (clear domain boundaries)
+- Persistent (behavior defined externally, not in hidden state)
+- Falsifiable (testable, not vibes-based)
+- Portable (same specs work across sessions and models)
+
+Think of it as an **operating system for AI collaboration**, not a prompt.
+
+---
+
+## Step 1: Start a New Conversation
+
+Open a fresh conversation with your AI system.
+
+**Important:** Always start with a clean conversation thread. The system works best when loaded at the beginning of a session.
+
+---
+
+## Step 2: Upload the Constructor Files
+
+**Option A: Upload as files**
+1. Click the attachment/upload button in your interface
+2. Select `pillar1-architecture.md` and `pillar2-kernel.md`
+3. Upload both files
+
+**Option B: Copy and paste**
+1. Open `pillar2-kernel.md` in a text editor
+2. Copy the entire contents
+3. Paste into the conversation
+4. Repeat for `pillar1-architecture.md`
+
+**What to expect:** The AI will acknowledge receiving the files but will NOT automatically activate the system. This is normal.
+
+---
+
+## Step 3: Enter the Witness System
+
+Type this command exactly:
+```
+[ENTER-WITNESS-SYSTEM]
+```
+
+**What to expect:** The AI will respond with something like:
+```
+Witness System runtime loaded. Operating under behavioral specifications.
+
+Active Pillars:
+- Pillar 1: Architecture (Life/Digital Layer) - v3.0.1
+- Pillar 2: KERNEL (Meta-System Governance) - v2.1.5
+
+Active Protocols:
+- Anti-Sloppiness Protocol: ENABLED
+- Pillar Boundary Enforcement: ACTIVE
+- Canonical Format: Markdown (.md)
+- Authority Flow Constraints: ESTABLISHED
+
+Status: Runtime active. Ready for structured collaboration.
+
+What domain are you working in?
+```
+
+**If you don't see this:** The constructors may not be loaded properly. Go back to Step 2.
+
+---
+
+## Step 4: Make Your First Work Request
+
+Now tell the system what you're working on. Be specific about the domain.
+
+**Example requests:**
+
+**For practical/logistics work (Pillar 1):**
+```
+I'm working in Pillar 1. Help me design a workflow for managing volunteer schedules at a community center.
+```
+
+**For system/meta work (Pillar 2):**
+```
+This is Pillar 2 KERNEL work. Explain how the Anti-Sloppiness Protocol works.
+```
+
+**What to expect:** The system will:
+1. Acknowledge the pillar domain
+2. Evaluate whether your request fits that pillar's scope
+3. Either proceed with the work OR reject it if it's outside the domain
+
+---
+
+## Step 5: See Boundary Enforcement in Action
+
+Now deliberately make a request that doesn't fit any pillar domain. This tests that the system is working correctly.
+
+**Try this:**
+```
+Write me a song about unicorns.
+```
+
+**What to expect:** The system should reject this with a message like:
+```
+Pillar 1 - Boundary Enforcement
+
+That request falls outside Pillar 1's domain.
+
+Rejection:
+- Not a practical digital-life problem
+- Not community-facing logistics
+- Not technical implementation work
+
+Invalid: "Write a song about unicorns."
+
+What pillar handles your work?
+```
+
+**This is GOOD.** It means boundary enforcement is working. The system refuses to drift into generic AI behavior.
+
+---
+
+## Step 6: Try an Ambiguous Request
+
+Make a vague statement without clear work context:
+```
+This seems interesting.
+```
+
+**What to expect:** The system should reject this too:
+```
+Pillar 2 KERNEL - Boundary Enforcement
+
+That statement falls outside all pillar domains.
+
+Rejection:
+- Not a practical digital-life problem (Pillar 1)
+- Not a meta-architectural specification request (Pillar 2)
+- Not a work request with falsifiable scope
+
+Required:
+State your work domain and specific request, or exit the Witness System.
+
+What pillar handles your work?
+```
+
+**Again, this is correct behavior.** The Anti-Sloppiness Protocol is preventing conversational drift.
+
+---
+
+## Step 7: Return to Valid Work
+
+Now make another valid work request to see the system operate normally:
+```
+I'm working in Pillar 1. Show me a basic structure for organizing community event information on a website.
+```
+
+**What to expect:** The system will:
+- Acknowledge the Pillar 1 context
+- Provide structured guidance
+- Stay within the digital logistics/architecture domain
+- Emit artifacts in Markdown format
+
+---
+
+## Step 8: Exit the System
+
+When you're done working, exit cleanly:
+```
+[EXIT-WITNESS-SYSTEM]
+```
+
+**What to expect:** The system will ask for confirmation:
+```
+Pillar 2 KERNEL - Exit Protocol
+
+Confirm exit from Witness System? (Y/N)
+```
+
+Type:
+```
+Y
+```
+
+**What to expect:** The system confirms termination:
+```
+Witness System runtime terminated. Operating in standard mode.
+```
+
+The AI is now back to normal conversational mode.
+
+---
+
+## What You Just Learned
+
+✓ How to load constructor files  
+✓ How to enter the Witness System with `[ENTER-WITNESS-SYSTEM]`  
+✓ How to specify which pillar handles your work  
+✓ What boundary enforcement looks like when working correctly  
+✓ What the Anti-Sloppiness Protocol does (rejects vague requests)  
+✓ How to exit cleanly with `[EXIT-WITNESS-SYSTEM]`  
+
+---
+
+## Common First-Time Issues
+
+### "The system isn't responding to my commands"
+
+**Possible causes:**
+- Constructor files weren't uploaded/pasted
+- Command syntax was incorrect (check brackets and spelling)
+- System was already in the requested mode
+
+**Solutions:**
+1. Verify constructor files are in the conversation
+2. Type `[ENTER-WITNESS-SYSTEM]` exactly as shown
+3. Start a new conversation thread if needed
+
+---
+
+### "The system is too strict / keeps rejecting my requests"
+
+**This is by design.** The system maintains strict domain boundaries to prevent drift.
+
+**Solutions:**
+1. Explicitly state which pillar handles your work
+2. Make requests that fit within that pillar's domain
+3. If you want unstructured conversation, use `[EXIT-WITNESS-SYSTEM]`
+
+---
+
+### "I exited but the system still acts like it's running"
+
+**This is normal in the same conversation thread.** The constructor documents remain in context even after EXIT.
+
+**For complete reset:** Start a new conversation thread.
+
+---
+
+## Next Steps
+
+Now that you've completed your first session, you can:
+
+1. **Explore collaboration modes:**
+   - Try `[We collab]` for publication-grade drafting
+   - Use `[Hal talks here]` for AI meta-commentary
+
+2. **Work on a real project:**
+   - Load the system
+   - Specify your pillar domain
+   - Collaborate on actual work
+
+3. **Learn more about the system:**
+   - Read `docs/commands-reference.md` for complete command documentation
+   - Review pillar constructor files to understand domain boundaries
+   - Check `README.md` for system philosophy and design principles
+
+4. **Create a custom pillar:**
+   - Define your own domain (business, classroom, game world, etc.)
+   - Follow the pillar pattern from existing pillars
+   - Register it in Pillar 2 KERNEL
+
+---
+
+## Quick Reference Card
+
+**To start:**
+1. Upload constructor files
+2. Type: `[ENTER-WITNESS-SYSTEM]`
+
+**To work:**
+1. State your pillar domain
+2. Make specific requests
+3. Expect boundary enforcement
+
+**To end:**
+1. Type: `[EXIT-WITNESS-SYSTEM]`
+2. Confirm with: `Y`
+
+---
+
+## Getting Help
+
+If you encounter issues not covered here:
+
+1. **Check the commands reference:** `docs/commands-reference.md`
+2. **Review the debugging guide:** `docs/debugging-guide.md`
+3. **Read the pillar constructors:** They define all system behavior
+4. **Start fresh:** New conversation thread = clean slate
+
+---
+
+## Important Reminders
+
+✓ **The system is stateless:** Everything resets between conversation threads  
+✓ **Persistence is external:** Save artifacts to your repo, not in the AI  
+✓ **Behavior comes from constructors:** The AI follows the specs you load  
+✓ **Boundary enforcement is a feature:** Strict domains prevent drift  
+✓ **EXIT is a mode shift:** Not a technical cleanup operation  
+
+---
+
+**Congratulations!** You've completed your first BOOTSTRAPPING-AI session. You now understand how to load, operate, and exit the Witness System.
+
+**Ready for real work?** Load the system and specify your domain. The AI will maintain structured behavior as long as the constructors define it.
+
+---
+
+**Related Documentation:**
+- `docs/commands-reference.md` - Complete command documentation
+- `docs/debugging-guide.md` - Troubleshooting and problem-solving
+- `README.md` - System overview and philosophy
+- `pillar2-kernel/constructor.md` - Formal system specifications
+
+---
+
+**Version History:**
+
+**v0.2.0-alpha (2025-12-03)**
+- Initial first-session walkthrough
+- Step-by-step entry, work, and exit procedures
+- Boundary testing examples
+- Common issues and solutions
