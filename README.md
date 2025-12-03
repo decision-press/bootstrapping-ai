@@ -375,27 +375,6 @@ For deeper understanding, read: [The Witness Constructor: Plant the Flag](https:
 
 **Ready to begin?** Start with Step 1 above, or jump to `docs/first-session-walkthrough.md` for a guided first session.
 
-## Example Use Cases
-**Load Core Constructors**
-
-**spin up a pillar and name it:**
-- Build workflows, schedules, communications
-- Fair language interpretation for diverse communities
-
-- Text Adventure Games
-- Natural language gameplay with structured state
-- Deterministic world simulation
-
-- Writing
-- Maintain philosophical rigor
-- Prevent drift into sentimentality
-
-- System Design
-- Meta-architecture discussions
-- Integrity audits
-
-**Save Artifacts Locally**
-**Push to Repository**
 
 ## Project Status
 
