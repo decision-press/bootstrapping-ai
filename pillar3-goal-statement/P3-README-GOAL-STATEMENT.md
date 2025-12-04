@@ -4,7 +4,8 @@
 
 ### *Master Overview for Root Project Directory*
 
-Version 1.0
+---
+# Version 1.0
 
 ## **Purpose**
 
@@ -21,7 +22,7 @@ Each **Pillar Sub-Constructor** operates *within* the Master Constructor and doe
 
 ## **Directory Layout**
 
-```
+```md
 /bootstrapping-ai/
     pillar1-architecture/
         pillar1-architecture.vX.x.x.md
@@ -92,7 +93,7 @@ Each **Pillar Sub-Constructor** operates *within* the Master Constructor and doe
         astro/
         comms/
         outputs/
-```
+```md
 
 ## **Master Constructor Role**
 
@@ -163,5 +164,3 @@ Place artifacts generated during work into the pillar’s `outputs/` or other re
 ## **Revision Log**
 
 * **v1.0** — Initial creation. Establishes top-level structure, directory map, and system rules.
-
----

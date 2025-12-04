@@ -1,13 +1,12 @@
 # BOOTSTRAPPING-AI SYSTEM
 
-**Triad-Level Architecture (v2.0)**  
-*A clear, practical overview for new users*
+## Triad-Level Architecture (v2.0)
 
----
+A clear, practical overview for new users
 
 ## Priority 1: Fairness and equity in use
 
-*Fairness and intent reconstruction between human input and AI interpretation*
+Fairness and intent reconstruction between human input and AI interpretation
 
 The system is to ensure that the system itself treats **all forms of human language as valid**:
 
@@ -30,8 +29,6 @@ The core function here is **equity_guard**, which stabilizes meaning without req
 **equity_guard** makes the system **accessible, just, and human-affirming**.  
 **equity_guard** is instantiated as of this reading, and is an ever evolving theme as a recursive function.
 
----
-
 ## What This System Is
 
 BOOTSTRAPPING-AI is a **three-pillar collaboration architecture** designed for real-world human–AI work.
@@ -48,13 +45,11 @@ It is a structure for building reliable, equitable, practical AI-assisted workfl
 
 The system has **three pillars**, each with a strict domain.
 
----
-
 ## The Three Pillars
 
 ### Pillar 1: Oi-instructions
 
-*Real-world operations and digital-life workflows*
+Real-world operations and digital-life workflows
 
 Pillar 1 handles everything that makes an LLM emulation-machine powerful:
 
@@ -73,9 +68,9 @@ If it doesn't help humans complete tasks, it doesn't belong here.
 
 ### Pillar 2: Si-instructions
 
-*Meta-system, guardrails, and collaboration rules*
+Meta-system, guardrails, and collaboration rules
 
-Pillar 2 governs the collaborative system:
+## Pillar 2 governs the collaborative system
 
 * drift detection
 * pillar enforcement
@@ -93,7 +88,7 @@ Pillar 2 governs the collaborative system:
 * communication best practices and ensuring tight focus on goal completion
 * responsive to suggestions, but disciplined in keeping the team focused
 
-Pillar 1 exists to keep the system grounded in **turn to turn reality**, not abstraction.  
+Pillar 2 exists to keep the system grounded in **turn to turn reality**, not abstraction.  
 If it doesn't help humans complete tasks, it doesn't belong here.
 
 Pillar 2 does **not** contain content.  
@@ -103,13 +98,11 @@ This is the system's spine.
 
 ### Pillar 3: Goal-statement
 
-*[Content to be added]*
-
----
+**[Content to be added]**
 
 ## How the System Works Together
 
-The pillars form a cycle:
+**The pillars form a cycle:**
 
 1. **Human input**
 2. Oi→Si reconstruction (Pillar 1)
@@ -124,11 +117,9 @@ This loop provides:
 * portability
 * real-world utility
 
-The system does not drift.  
+The system resists drift.  
 It does not overreach.  
 It remains grounded, disciplined, and human-centered.
-
----
 
 ## What Makes This System Unique
 
@@ -144,19 +135,15 @@ It remains grounded, disciplined, and human-centered.
 * **Portable and forkable**  
   Anyone can use, extend, or adapt it.
 
----
-
 ## For New Users
 
 If you want to use BOOTSTRAPPING-AI:
 
 1. **Pillar 1** This gets your LLM get's its direction. Roles are defined.
 2. **Pillar 2** When the structure, rules, or collaboration mechanics need attention.
-3. **Use Pillar 3** 
+3. **Use Pillar 3**
 Each pillar is self-contained.  
 If a request doesn't fit a pillar's domain, the system will reject it.
-
----
 
 ## Version Information
 

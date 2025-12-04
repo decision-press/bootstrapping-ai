@@ -1,6 +1,6 @@
 # BOOTSTRAPPING-AI
 
-**A portable behavioral specification system for stateless LLMs**
+## A portable behavioral specification system for stateless LLMs**
 
 ## What This Is
 
@@ -15,6 +15,7 @@ Think of it as an operating system specification for AI collaboration, not a per
 **The problem:** LLMs are stateless. They don't remember modes, flags, or behavior between turns. Every response is computed fresh.
 
 **The solution:** Move all persistence into external structures:
+
 - **Constructors** define runtime behavior (like an OS spec)
 - **Pillars** define domain boundaries (architecture, equity, content areas)
 - **Canon** provides external state (docs, repos, rules)
@@ -26,6 +27,7 @@ Make the AI become the runtime instead of talking about the runtime.
 ## Why This Matters
 
 **Without structure:**
+
 - AI collaboration drifts into generic helpfulness
 - Rules fade over long conversations
 - Each person reinvents patterns from scratch
@@ -33,8 +35,10 @@ Make the AI become the runtime instead of talking about the runtime.
 - Linguistic bias goes unchecked
 
 **With BOOTSTRAPPING-AI:**
+
 - Behavior is **falsifiable** (testable, not vibes)
 - Patterns are **portable** (works across models)
 - Guardrails are **explicit** (documented, auditable)
 - Equity is **structural** (built into preprocessing)
 - Systems are **forkable** (community-improvable)
+  

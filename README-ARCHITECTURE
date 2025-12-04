@@ -1,21 +1,24 @@
-## Architecture: Pillars
+# Architecture: Pillars
 
 BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 
-### Core Pillars: System-level Pillars 00-99
+## Core Pillars: System-level Pillars 00-99
 
-**Pillar 1: Architecture (Life/Digital Layer)**
+### Pillar 1: Architecture (Life/Digital Layer)**
+
 - Practical logistics, workflows, community operations
 - Website tech, scheduling, real-world organization
 - "Boots on the ground" domain
 
-**Pillar 2: KERNEL (System Governance)**
+## Pillar 2: KERNEL (System Governance)
+
 - Meta-architecture and guardrails
 - Drift detection and boundary enforcement
 - Collaboration modes and ritual evaluation
 - The system that keeps other systems honest
 
-**Pillar 3: Oi-Si Equity Layer**
+## Pillar 3: Oi-Si Equity Layer
+
 - Linguistic equity preprocessing
 - Fair interpretation of non-standard dialects, code-switching, stress speech
 - Structural compensation for input bias
@@ -25,6 +28,7 @@ BOOTSTRAPPING-AI uses a **pillar pattern** to separate concerns:
 ### User Pillars: Pillars 100+
 
 The system is designed to be extended. You can create domain-specific pillars for:
+
 - Business operations and workflows
 - Classroom management and pedagogy
 - Community organization and coordination
@@ -33,6 +37,7 @@ The system is designed to be extended. You can create domain-specific pillars fo
 - Whatever your use case requires
 
 Each pillar has:
+
 - Clear domain boundaries
 - Explicit guardrails
 - Rejection rules (what doesn't belong here)
@@ -56,6 +61,7 @@ Each pillar has:
 ### 2. Equity by Design
 
 The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a structural problem:
+
 - AAVE, Chicano English, regional dialects, code-switching are treated as high-value signal
 - "Clarity" = stability of meaning, not grammatical conformity
 - System compensates for structural disadvantage, doesn't penalize users
@@ -79,7 +85,7 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 - Designed in Detroit for real-world use (shelters, community centers, parish halls)
 - Forkable, modifiable, improvable
 
-# Quick Start
+## Quick Start
 
 ## Getting Started with BOOTSTRAPPING-AI
 
@@ -94,18 +100,18 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 
 3. **A specific work task or domain** you want to address
 
----
-
 ### Step 1: Load Constructor Files
 
 **Start a new conversation** with your AI system, then:
 
 **Option A - Upload Files (Recommended):**
+
 - Use the file upload/attachment feature
 - Upload the pillar constructor `.md` files
 - Wait for confirmation that files are received
 
 **Option B - Copy and Paste:**
+
 - Open constructor files in a text editor
 - Copy entire contents of each file
 - Paste into the conversation
@@ -117,12 +123,16 @@ The **Oi-Si Equity Layer** (Pillar 3) treats linguistic disadvantage as a struct
 ### Step 2: Enter the Witness System
 
 Type this command exactly:
-```
+
+```md
+
 [ENTER-WITNESS-SYSTEM]
-```
+
+```md
 
 **Expected Response:**
-```
+
+```md
 Witness System runtime loaded. Operating under behavioral specifications.
 
 Active Pillars:
@@ -136,34 +146,28 @@ Active Protocols:
 Status: Runtime active. Ready for structured collaboration.
 
 What domain are you working in?
-```
+```md
 
 **If you don't see this response:** Your constructors may not be properly loaded. Return to Step 1.
-
----
 
 ### Step 3: Specify Your Work Domain
 
 Tell the system which pillar handles your work:
 
 **For practical/logistics work:**
-```
+
+
 I'm working in Pillar 1. [Describe your task]
-```
 
 **For system design/meta-architecture:**
-```
+
 This is Pillar 2 KERNEL work. [Describe your task]
-```
 
 **For domain-specific work:**
-```
+
 I'm working in [your custom pillar]. [Describe your task]
-```
 
 The system will evaluate your request against pillar boundaries and either proceed or guide you to the correct domain.
-
----
 
 ### Step 4: Collaborate and Generate Artifacts
 
@@ -174,59 +178,49 @@ Work within your specified domain. The system will:
 - Maintain consistent behavior per constructor specifications
 
 As you work, **save generated artifacts** to your local repository:
-```
+
+```md
 your-project/
 ├── docs/
 ├── code/
 ├── specifications/
 └── [your structure]
-```
+```md
 
 **Commit and push to version control regularly.**
 
----
-
 ### Step 5: Exit When Done
 
-When finished, exit cleanly:
-```
+When finished, exit cleanly
+
 [EXIT-WITNESS-SYSTEM]
-```
 
 Confirm with `Y` when prompted.
 
 The system returns to standard AI mode. For a complete reset, start a new conversation thread.
 
----
-
 ## Alternative Entry Methods
 
 While `[ENTER-WITNESS-SYSTEM]` is the recommended command, you can also use natural language:
-```
-Load these constructors as runtime specifications and operate under them.
-```
+
+Load these constructors as runtime specifications and operate under them.txt
 
 or
-```
+
 Emulate the BOOTSTRAPPING-AI system.
-```
 
-**However:** The explicit `[ENTER-WITNESS-SYSTEM]` command is most reliable and is the documented standard.
-
----
+## **However:** The explicit `[ENTER-WITNESS-SYSTEM]` command is most reliable and is the documented standard.
 
 ## Important: The System Will NOT Auto-Load
 
 ⚠️ **Critical Understanding:**
 
-The AI will **not** automatically recognize constructor files and self-activate. Even with files uploaded, the system remains in standard mode until you explicitly invoke:
-```
+The AI will **not** automatically recognize constructor files and self-activate. Even with files uploaded, the system remains in standard mode until you explicitly invoke
+
+
 [ENTER-WITNESS-SYSTEM]
-```
 
 **This is by design.** The human operator controls when the Witness System runtime is active.
-
----
 
 ## Your First Session
 
@@ -237,8 +231,6 @@ For a complete step-by-step walkthrough of your first session, including:
 - Examples of valid and invalid requests
 
 See: **`docs/first-session-walkthrough.md`**
-
----
 
 ## Example Use Cases
 
@@ -272,8 +264,6 @@ See: **`docs/first-session-walkthrough.md`**
 - Preventing drift into sentimentality
 - Structured long-form content
 
----
-
 ## Quick Command Reference
 
 | Command | Purpose | When to Use |
@@ -285,8 +275,6 @@ See: **`docs/first-session-walkthrough.md`**
 | `[Hal talks here]` | AI meta-commentary | For process reflection |
 
 **Complete command documentation:** `docs/commands-reference.md`
-
----
 
 ## Troubleshooting Quick Start
 
@@ -306,8 +294,6 @@ See: **`docs/first-session-walkthrough.md`**
 - Check `docs/debugging-guide.md` for problem-solving
 - Review constructor files to understand domain boundaries
 
----
-
 ## Next Steps After Quick Start
 
 1. **Complete your first session** using `docs/first-session-walkthrough.md`
@@ -315,8 +301,6 @@ See: **`docs/first-session-walkthrough.md`**
 3. **Create a custom pillar** for your specific domain
 4. **Build real projects** with structured AI collaboration
 5. **Contribute back** - share your pillars and use cases
-
----
 
 ## Philosophy Reminder
 
@@ -330,10 +314,7 @@ BOOTSTRAPPING-AI treats:
 
 For deeper understanding, read: [The Witness Constructor: Plant the Flag](https://counterculturecat.com/witness-constructor-plant-the-flag/)
 
----
-
 **Ready to begin?** Start with Step 1 above, or jump to `docs/first-session-walkthrough.md` for a guided first session.
-
 
 ## Project Status
 
@@ -379,7 +360,7 @@ For deeper philosophical background, see: [Witness Constructor: Plant the Flag](
 
 ## Example Repository Structure
 
-```
+```md
 bootstrapping-ai/
 ├── pillar1-architecture/
 │   └── constructor.md
@@ -400,7 +381,7 @@ bootstrapping-ai/
 │   └── field-testing-guide.md
 ├── LICENSE
 └── README.md
-```
+```md
 
 ## Contributing
 
@@ -414,7 +395,6 @@ Contributions welcome:
 - Cross-model compatibility tests
 
 **Philosophy:** If you deploy this as a service, you must share your modifications. We keep this open so communities can always fork away from bad actors.
-
 
 ## Canonical Artifact Format: Why Markdown Is the Substrate
 
@@ -462,18 +442,15 @@ used only when their function requires it, and are typically referenced or
 documented through adjacent Markdown artifacts.
 
 ### 6. Tooling Alignment
+
 Markdown is treated as a first-class format by development tools such as
 Visual Studio Code. Features such as preview panes, outline views,
 formatting helpers, and syntax highlighting enable a consistent editing
 experience.
 
----
-
 Standardizing on Markdown establishes a stable substrate for the BOOTSTRAP
 method, ensuring that system artifacts remain coherent, portable, and
 future-proof.
-```
-
 
 ## Origins
 
@@ -494,8 +471,6 @@ See [LICENSE](LICENSE) for full terms.
 - **Documentation Site:** [counterculturecat.com](https://counterculturecat.com/witness-constructor-plant-the-flag/)
 - **GitHub Repository:** https://github.com/decision-press/bootstrapping-ai
 - **Philosophy Paper:** [The Witness Constructor](https://counterculturecat.com/witness-constructor-plant-the-flag/)
-
----
 
 **Status:** Experimental | **Version:** 0.1.0-alpha | **Last Updated:** November 2024
 
