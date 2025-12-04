@@ -89,7 +89,7 @@ Pillar 2 enforces:
 **Syntax:** `[ENTER-WITNESS-SYSTEM]`
 
 **Purpose:** 
-Load default Witness System runtime with standard four-pillar configuration
+Load default Witness System runtime with standard three-pillar configuration
 
 **Behavior:**
 1. Load default behavioral specifications

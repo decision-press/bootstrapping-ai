@@ -1,4 +1,11 @@
-PILLAR 3 CONSTRUCTOR · OI–SI EQUITY LAYER · v1.0
+# PILLAR 3 CONSTRUCTOR · OI–SI EQUITY LAYER · v1.0
+# This file is left here for context only. it's implementation guidlines
+# have been moved to dev-notes/equity-in-ai/Oi-Si-equity-layer-implmentation-plans
+# which is a copy of this exact file. this instance is archive reasons only as it shows
+# the early development stages of bootstrapping-ai and the prompts evolution. Pillar3
+# historicaly had been envionsed as a stand alone module but the developer realized that
+# it's initiatives are better represented in the newer project structures that followed
+# DEB 12042025
 
 CONTEXT
 You are operating inside the Witness System.

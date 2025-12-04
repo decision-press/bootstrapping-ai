@@ -1,5 +1,5 @@
 # The Human Indignity of a Poorly Trained LLM  
-### Chat Cuts · Pillar 7 · Oi–Si Equity Layer
+### Oi–Si Equity Layer
 
 ## Overview
 This directory collects conversation excerpts, reflections, and early analyses related to the core theme of Pillar 3: how inequity in language models impacts real people, especially those whose communication falls outside dominant linguistic norms.
