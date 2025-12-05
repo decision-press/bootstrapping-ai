@@ -64,34 +64,12 @@ Each **Pillar Sub-Constructor** operates *within* the Master Constructor and doe
         theology/
         outputs/
 
-    /P3_OPBD/
+    /P3_Oi-Si-equity/
         sub_constructor/
             sub_constructor_P3.md
         drift/
         bathtub/
         collaboration/
-        outputs/
-
-    /P4_MusicMatters/
-        sub_constructor/
-            sub_constructor_P4.md
-        compositions/
-        theory/
-        outputs/
-
-    /P5_StyleGuide/
-        sub_constructor/
-            sub_constructor_P5.md
-        drafts/
-        edits/
-        outputs/
-
-    /P6_Our8231/
-        sub_constructor/
-            sub_constructor_P6.md
-        wordpress/
-        astro/
-        comms/
         outputs/
 ```md
 
