@@ -64,9 +64,10 @@ Make the AI become the runtime instead of talking about the runtime.
 ## What you should expect behavior wise
 
 - I have tested this system across the major Ai systems.
-- Each Ai gives 'similar' behavoir.
+- Each Ai gives 'similar' behavior.
 - There are bugs, of course, but you may find your LLM ask for pillar 'validation'.
 - The reasoning for this is to create an environment resistive to scope-creep or -  'drift"
 - Also note the integration of OiSi equity in pillar 3. This is a key feature
 - attempting to limit 'input bias' which, if you ask any LLM, they know exist.
+- Please  reserve pillars 0-99 for system level. User pillars begin at 100.
   
