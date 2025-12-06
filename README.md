@@ -41,4 +41,32 @@ Make the AI become the runtime instead of talking about the runtime.
 - Guardrails are **explicit** (documented, auditable)
 - Equity is **structural** (built into preprocessing)
 - Systems are **forkable** (community-improvable)
+
+## Four Step Startup Process
+
+-Cut and paste each constructor in order, 1,2,3
+-Type [ENTER-WITNESS-SYSTEM]
+-For a new project type 'build pillarxxx:name
+-Read, collaborate, save artifacts, repeat
+
+## Extending project pillars
+
+- once loaded simply type 'bulid pillar(x=pillar-number):your-pillar-name
+- answer the prompts your chosen LLM issues
+- create the artifacts
+- store them on git
+- rinse/repeat
+
+## Exiting the witness system
+
+-Type [EXIT-WITNESS-SYSTEM]
+
+## What you should expect behavior wise
+
+- I have tested this system across the major Ai systems.
+- Each Ai gives 'similar' behavoir.
+- There are bugs, of course, but you may find your LLM ask for pillar 'validation'.
+- The reasoning for this is to create an environment resistive to scope-creep or -  'drift"
+- Also note the integration of OiSi equity in pillar 3. This is a key feature
+- attempting to limit 'input bias' which, if you ask any LLM, they know exist.
   
